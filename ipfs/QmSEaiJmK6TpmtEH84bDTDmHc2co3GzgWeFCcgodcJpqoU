@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"nftnet2dev.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"nftnet2dev.sol": {
+			"keccak256": "0xb3bfb8afb8102d7e3e9b55622f33f37869f48302900e71be1020aff711cd911f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b679a37aa8acdd04f90dd19aa2727cf200a91ea36026ceb829b6572ff8e1dfe0",
+				"dweb:/ipfs/QmY1r5ZMdeGHiFiQHrC5rAYj1ELZmoSeeSX3ih6qgbdBHk"
+			]
+		}
+	},
+	"version": 1
+}

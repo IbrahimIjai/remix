@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "val",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "val2",
+						"type": "uint256"
+					}
+				],
+				"name": "calc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test.sol": "Transactions"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test.sol": {
+			"keccak256": "0xa0c162976e4c8ce9b7518e4c1e099d4a32b6009428e2e0c11927d13af350da0d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ed823b4c119a3dfb34131acb00c09ad0a597620d619116f1291b3645529a62d7",
+				"dweb:/ipfs/Qmb54XDgpQJq4Le8bjuxWbJcDU7vxmbzGJNbzkqdiGycjE"
+			]
+		}
+	},
+	"version": 1
+}

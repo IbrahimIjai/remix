@@ -1,0 +1,696 @@
+{
+	"id": "0ee19792fd008edbcd67ba77c916b33d",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/betting.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.13;\r\n\r\n\r\ncontract DistanceFiBET{\r\n\r\n\r\n    struct Results {\r\n        string Home_score;\r\n        string Away_score;\r\n    }\r\n    struct Match {\r\n        string Home;\r\n        string Away;\r\n        uint start_time;\r\n        uint final_whistle;\r\n        Results match_results;\r\n    }\r\n\r\n    Match [] allMatch;\r\n\r\n\r\n    // mapping (bytes32 => uint32) \r\n\r\n\r\n    // function sortMatchList (){\r\n    //     for (uint i=0; i<allMatch.length; i++){\r\n    //         if (allMatch[i].start_time > block.timestamp + ){\r\n\r\n    //         }\r\n    //     }\r\n    // }\r\n\r\n  \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/betting.sol": {
+				"DistanceFiBET": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/betting.sol\":63:610  contract DistanceFiBET{... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/betting.sol\":63:610  contract DistanceFiBET{... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220e8c80b287f3534e67f022b3a0b5eb6403132c4d3a554c931682203239e96a65264736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e8c80b287f3534e67f022b3a0b5eb6403132c4d3a554c931682203239e96a65264736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE8 0xC8 SIGNEXTEND 0x28 PUSH32 0x3534E67F022B3A0B5EB6403132C4D3A554C931682203239E96A65264736F6C63 NUMBER STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "63:547:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220e8c80b287f3534e67f022b3a0b5eb6403132c4d3a554c931682203239e96a65264736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE8 0xC8 SIGNEXTEND 0x28 PUSH32 0x3534E67F022B3A0B5EB6403132C4D3A554C931682203239E96A65264736F6C63 NUMBER STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "63:547:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 610,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220e8c80b287f3534e67f022b3a0b5eb6403132c4d3a554c931682203239e96a65264736f6c63430008110033",
+									".code": [
+										{
+											"begin": 63,
+											"end": 610,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 63,
+											"end": 610,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 63,
+											"end": 610,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 63,
+											"end": 610,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 63,
+											"end": 610,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 63,
+											"end": 610,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"contracts/betting.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/betting.sol\":\"DistanceFiBET\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/betting.sol\":{\"keccak256\":\"0x81c73ad09f4efa834929653318c96d4b4097c076e296dbb1b1e2981121e07a21\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bf7ee2dc6799c348fba5dbe72a416ca22058395dce003b48dba89ab73df21902\",\"dweb:/ipfs/QmbXL1L7Zm8PFVMykMUC9boxZEbX9JSmHm1HJExgB3fLbc\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 22,
+								"contract": "contracts/betting.sol:DistanceFiBET",
+								"label": "allMatch",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_struct(Match)18_storage)dyn_storage"
+							}
+						],
+						"types": {
+							"t_array(t_struct(Match)18_storage)dyn_storage": {
+								"base": "t_struct(Match)18_storage",
+								"encoding": "dynamic_array",
+								"label": "struct DistanceFiBET.Match[]",
+								"numberOfBytes": "32"
+							},
+							"t_string_storage": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_struct(Match)18_storage": {
+								"encoding": "inplace",
+								"label": "struct DistanceFiBET.Match",
+								"members": [
+									{
+										"astId": 8,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "Home",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 10,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "Away",
+										"offset": 0,
+										"slot": "1",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 12,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "start_time",
+										"offset": 0,
+										"slot": "2",
+										"type": "t_uint256"
+									},
+									{
+										"astId": 14,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "final_whistle",
+										"offset": 0,
+										"slot": "3",
+										"type": "t_uint256"
+									},
+									{
+										"astId": 17,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "match_results",
+										"offset": 0,
+										"slot": "4",
+										"type": "t_struct(Results)6_storage"
+									}
+								],
+								"numberOfBytes": "192"
+							},
+							"t_struct(Results)6_storage": {
+								"encoding": "inplace",
+								"label": "struct DistanceFiBET.Results",
+								"members": [
+									{
+										"astId": 3,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "Home_score",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 5,
+										"contract": "contracts/betting.sol:DistanceFiBET",
+										"label": "Away_score",
+										"offset": 0,
+										"slot": "1",
+										"type": "t_string_storage"
+									}
+								],
+								"numberOfBytes": "64"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/betting.sol": {
+				"ast": {
+					"absolutePath": "contracts/betting.sol",
+					"exportedSymbols": {
+						"DistanceFiBET": [
+							23
+						]
+					},
+					"id": 24,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".13"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "DistanceFiBET",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 23,
+							"linearizedBaseContracts": [
+								23
+							],
+							"name": "DistanceFiBET",
+							"nameLocation": "72:13:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "DistanceFiBET.Results",
+									"id": 6,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"mutability": "mutable",
+											"name": "Home_score",
+											"nameLocation": "129:10:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 6,
+											"src": "122:17:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "122:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"mutability": "mutable",
+											"name": "Away_score",
+											"nameLocation": "157:10:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 6,
+											"src": "150:17:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "150:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Results",
+									"nameLocation": "103:7:0",
+									"nodeType": "StructDefinition",
+									"scope": 23,
+									"src": "96:79:0",
+									"visibility": "public"
+								},
+								{
+									"canonicalName": "DistanceFiBET.Match",
+									"id": 18,
+									"members": [
+										{
+											"constant": false,
+											"id": 8,
+											"mutability": "mutable",
+											"name": "Home",
+											"nameLocation": "212:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 18,
+											"src": "205:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 7,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "205:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 10,
+											"mutability": "mutable",
+											"name": "Away",
+											"nameLocation": "234:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 18,
+											"src": "227:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 9,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "227:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 12,
+											"mutability": "mutable",
+											"name": "start_time",
+											"nameLocation": "254:10:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 18,
+											"src": "249:15:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 11,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "249:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 14,
+											"mutability": "mutable",
+											"name": "final_whistle",
+											"nameLocation": "280:13:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 18,
+											"src": "275:18:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 13,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "275:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 17,
+											"mutability": "mutable",
+											"name": "match_results",
+											"nameLocation": "312:13:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 18,
+											"src": "304:21:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_struct$_Results_$6_storage_ptr",
+												"typeString": "struct DistanceFiBET.Results"
+											},
+											"typeName": {
+												"id": 16,
+												"nodeType": "UserDefinedTypeName",
+												"pathNode": {
+													"id": 15,
+													"name": "Results",
+													"nameLocations": [
+														"304:7:0"
+													],
+													"nodeType": "IdentifierPath",
+													"referencedDeclaration": 6,
+													"src": "304:7:0"
+												},
+												"referencedDeclaration": 6,
+												"src": "304:7:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_struct$_Results_$6_storage_ptr",
+													"typeString": "struct DistanceFiBET.Results"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Match",
+									"nameLocation": "188:5:0",
+									"nodeType": "StructDefinition",
+									"scope": 23,
+									"src": "181:152:0",
+									"visibility": "public"
+								},
+								{
+									"constant": false,
+									"id": 22,
+									"mutability": "mutable",
+									"name": "allMatch",
+									"nameLocation": "350:8:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 23,
+									"src": "341:17:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_struct$_Match_$18_storage_$dyn_storage",
+										"typeString": "struct DistanceFiBET.Match[]"
+									},
+									"typeName": {
+										"baseType": {
+											"id": 20,
+											"nodeType": "UserDefinedTypeName",
+											"pathNode": {
+												"id": 19,
+												"name": "Match",
+												"nameLocations": [
+													"341:5:0"
+												],
+												"nodeType": "IdentifierPath",
+												"referencedDeclaration": 18,
+												"src": "341:5:0"
+											},
+											"referencedDeclaration": 18,
+											"src": "341:5:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_struct$_Match_$18_storage_ptr",
+												"typeString": "struct DistanceFiBET.Match"
+											}
+										},
+										"id": 21,
+										"nodeType": "ArrayTypeName",
+										"src": "341:8:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_struct$_Match_$18_storage_$dyn_storage_ptr",
+											"typeString": "struct DistanceFiBET.Match[]"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 24,
+							"src": "63:547:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:577:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_word",
+						"type": "string"
+					}
+				],
+				"name": "changeFlower",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFlower",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"artifacts/test.sol": "Test9"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"artifacts/test.sol": {
+			"keccak256": "0x40ac4694221641cc9530fbed59a27ff1c278a455772ac84f39253d868139c3dd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://51a991419363fe83397941f9c8db660fa32c027fde46fa4c86633e31c72895b0",
+				"dweb:/ipfs/QmWtQibbRsxctCmpHcHBuUroVmsjJdoL8LuU8CUciJPnVs"
+			]
+		}
+	},
+	"version": 1
+}

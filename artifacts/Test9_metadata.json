@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_word",
+						"type": "string"
+					}
+				],
+				"name": "changeFlower",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFlower",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test3.sol": "Test9"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test3.sol": {
+			"keccak256": "0x2a394156bc452b1b9a5ba8c86eef763d41fb973b16f0519f07a911a8c4d98807",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://822dbfab63fbe9fc20cfef18a632fa7b19965cfc8557ec51a055a437cfd82bf4",
+				"dweb:/ipfs/Qme3WhqjBwCu2pcNrkDFi8gHpBuif1jZzcTiF99B7AshKm"
+			]
+		}
+	},
+	"version": 1
+}

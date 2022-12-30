@@ -1,0 +1,348 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Game",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "HomeTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "AwayTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endTime",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "Home_score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Away_score",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DistanceFiBET.Results",
+						"name": "results",
+						"type": "tuple"
+					},
+					{
+						"internalType": "enum DistanceFiBET.Choices",
+						"name": "gameResult",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "allMatch",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "HomeTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "AwayTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endTime",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "Home_score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Away_score",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DistanceFiBET.Results",
+						"name": "results",
+						"type": "tuple"
+					},
+					{
+						"internalType": "enum DistanceFiBET.Choices",
+						"name": "gameResult",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_homeScore",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_awayScore",
+						"type": "uint256"
+					}
+				],
+				"name": "closeMatch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_HomeTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_AwayTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_startTime",
+						"type": "uint256"
+					}
+				],
+				"name": "instantiateMatch",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum DistanceFiBET.Choices",
+						"name": "_betChoice",
+						"type": "uint8"
+					}
+				],
+				"name": "placeBet",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "specificMatchBets",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "bettor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum DistanceFiBET.Choices",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum DistanceFiBET.Choices",
+						"name": "_betChoice",
+						"type": "uint8"
+					}
+				],
+				"name": "updateBet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userBet",
+				"outputs": [
+					{
+						"internalType": "enum DistanceFiBET.Choices",
+						"name": "bet",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "winAmounts",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "played",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/betting.sol": "DistanceFiBET"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+			"keccak256": "0x0e9621f60b2faabe65549f7ed0f24e8853a45c1b7990d47e8160e523683f3935",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://287a2f8d5814dd0f05f22b740f18ca8321acc21c9bd03a6cb2203ea626e2f3f2",
+				"dweb:/ipfs/QmZRQv9iuwU817VuqkA2WweiaibKii69x9QxYBBEfbNEud"
+			]
+		},
+		"@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
+			"keccak256": "0x5050943b32b6a8f282573d166b2e9d87ab7eb4dbba4ab6acf36ecb54fe6995e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4831d777a29ebdf9f2caecd70e74b97bff1b70e53622fd0a02aed01e21c8271",
+				"dweb:/ipfs/QmUqurVVnCc7XkMxb2k23TVQUtuhHZduJ3hTZarTJrqU24"
+			]
+		},
+		"contracts/betting.sol": {
+			"keccak256": "0x73aa1f4f016ece03b7e3ad502dc4e51270710ee8af1e53b15c2f325e682c65ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5d5b387e6c92dc1b3602aa410b933b131e842d1b55f150e7f75d6bb3f24bdcf3",
+				"dweb:/ipfs/QmPiL8KZ78iML731SEzYsRNpibJynqwH1jkWR7rzDZeJjy"
+			]
+		}
+	},
+	"version": 1
+}
